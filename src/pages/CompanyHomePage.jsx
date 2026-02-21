@@ -5,9 +5,6 @@ export default function companyhomePage() {
   return (
     <>
       <div>
-  <div className="page-loader" id="page-loader">
-    <div className="loader"><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /></div>
-  </div>{/* page loader */}
   <div className="theme-layout">
     <div className="responsive-header">
       <div className="logo res"><img src="images/logo.png" alt /><span>Socimo</span></div>

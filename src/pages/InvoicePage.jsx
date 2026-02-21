@@ -5,9 +5,6 @@ export default function invoicePage() {
   return (
     <>
       <div>
-  <div className="page-loader" id="page-loader">
-    <div className="loader"><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /></div>
-  </div>{/* page loader */}
   <div className="theme-layout gray-bg">
     <div className="container">
       <div className="row justify-content-md-center">

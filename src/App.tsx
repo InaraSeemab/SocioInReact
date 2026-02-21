@@ -49,58 +49,74 @@ import ThankYouPage from './pages/ThankYouPage';
 import VideosPage from './pages/VideosPage';
 import WidgetsPage from './pages/WidgetsPage';
 
+import PageLoader from './components/PageLoader';
+
 export default function App() {
+  React.useEffect(() => {
+    const loader = document.getElementById('page-loader');
+    if (loader) {
+      // Small delay to ensure smooth transition
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 100);
+    }
+  }, []);
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/404" element={<Page404 />} />
-        <Route path="/about-university" element={<AboutUniversityPage />} />
-        <Route path="/add-credits" element={<AddCreditsPage />} />
-        <Route path="/add-new-course" element={<AddNewCoursePage />} />
-        <Route path="/badges" element={<BadgesPage />} />
-        <Route path="/blog-detail" element={<BlogDetailPage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/book-detail" element={<BookDetailPage />} />
-        <Route path="/books" element={<BooksPage />} />
-        <Route path="/coming-soon" element={<ComingSoonPage />} />
-        <Route path="/company-home" element={<CompanyHomePage />} />
-        <Route path="/course-detail" element={<CourseDetailPage />} />
-        <Route path="/courses" element={<CoursesPage />} />
-        <Route path="/development-component" element={<DevelopmentComponentPage />} />
-        <Route path="/development-elements" element={<DevelopmentElementsPage />} />
-        <Route path="/event-detail" element={<EventDetailPage />} />
-        <Route path="/event-page" element={<EventPagePage />} />
-        <Route path="/feed" element={<FeedPage />} />
-        <Route path="/forgot-password" element={<ForgotPasswordPage />} />
-        <Route path="/group-detail" element={<GroupDetailPage />} />
-        <Route path="/groups" element={<GroupsPage />} />
-        <Route path="/help-faq-detail" element={<HelpFaqDetailPage />} />
-        <Route path="/help-faq" element={<HelpFaqPage />} />
-        <Route path="/" element={<IndexPage />} />
-        <Route path="/invoice" element={<InvoicePage />} />
-        <Route path="/live-stream" element={<LiveStreamPage />} />
-        <Route path="/loader-spiners" element={<LoaderSpinersPage />} />
-        <Route path="/messages" element={<MessagesPage />} />
-        <Route path="/notifications" element={<NotificationsPage />} />
-        <Route path="/pay-out" element={<PayOutPage />} />
-        <Route path="/post-detail" element={<PostDetailPage />} />
-        <Route path="/price-plan" element={<PricePlanPage />} />
-        <Route path="/privacy-n-policy" element={<PrivacyNPolicyPage />} />
-        <Route path="/product-cart" element={<ProductCartPage />} />
-        <Route path="/product-checkout" element={<ProductCheckoutPage />} />
-        <Route path="/profile-page2" element={<ProfilePage2Page />} />
-        <Route path="/profile" element={<ProfilePage />} />
-        <Route path="/Q-A" element={<QAPage />} />
-        <Route path="/Q-detail" element={<QDetailPage />} />
-        <Route path="/search-result" element={<SearchResultPage />} />
-        <Route path="/send-feedback" element={<SendFeedbackPage />} />
-        <Route path="/settings" element={<SettingsPage />} />
-        <Route path="/sign-in" element={<SignInPage />} />
-        <Route path="/signup" element={<SignupPage />} />
-        <Route path="/thank-you" element={<ThankYouPage />} />
-        <Route path="/videos" element={<VideosPage />} />
-        <Route path="/widgets" element={<WidgetsPage />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <PageLoader />
+      <BrowserRouter>
+
+        <Routes>
+          <Route path="/404" element={<Page404 />} />
+          <Route path="/about-university" element={<AboutUniversityPage />} />
+          <Route path="/add-credits" element={<AddCreditsPage />} />
+          <Route path="/add-new-course" element={<AddNewCoursePage />} />
+          <Route path="/badges" element={<BadgesPage />} />
+          <Route path="/blog-detail" element={<BlogDetailPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/book-detail" element={<BookDetailPage />} />
+          <Route path="/books" element={<BooksPage />} />
+          <Route path="/coming-soon" element={<ComingSoonPage />} />
+          <Route path="/company-home" element={<CompanyHomePage />} />
+          <Route path="/course-detail" element={<CourseDetailPage />} />
+          <Route path="/courses" element={<CoursesPage />} />
+          <Route path="/development-component" element={<DevelopmentComponentPage />} />
+          <Route path="/development-elements" element={<DevelopmentElementsPage />} />
+          <Route path="/event-detail" element={<EventDetailPage />} />
+          <Route path="/event-page" element={<EventPagePage />} />
+          <Route path="/feed" element={<FeedPage />} />
+          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+          <Route path="/group-detail" element={<GroupDetailPage />} />
+          <Route path="/groups" element={<GroupsPage />} />
+          <Route path="/help-faq-detail" element={<HelpFaqDetailPage />} />
+          <Route path="/help-faq" element={<HelpFaqPage />} />
+          <Route path="/" element={<IndexPage />} />
+          <Route path="/invoice" element={<InvoicePage />} />
+          <Route path="/live-stream" element={<LiveStreamPage />} />
+          <Route path="/loader-spiners" element={<LoaderSpinersPage />} />
+          <Route path="/messages" element={<MessagesPage />} />
+          <Route path="/notifications" element={<NotificationsPage />} />
+          <Route path="/pay-out" element={<PayOutPage />} />
+          <Route path="/post-detail" element={<PostDetailPage />} />
+          <Route path="/price-plan" element={<PricePlanPage />} />
+          <Route path="/privacy-n-policy" element={<PrivacyNPolicyPage />} />
+          <Route path="/product-cart" element={<ProductCartPage />} />
+          <Route path="/product-checkout" element={<ProductCheckoutPage />} />
+          <Route path="/profile-page2" element={<ProfilePage2Page />} />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/Q-A" element={<QAPage />} />
+          <Route path="/Q-detail" element={<QDetailPage />} />
+          <Route path="/search-result" element={<SearchResultPage />} />
+          <Route path="/send-feedback" element={<SendFeedbackPage />} />
+          <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/sign-in" element={<SignInPage />} />
+          <Route path="/signup" element={<SignupPage />} />
+          <Route path="/thank-you" element={<ThankYouPage />} />
+          <Route path="/videos" element={<VideosPage />} />
+          <Route path="/widgets" element={<WidgetsPage />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }

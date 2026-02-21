@@ -5,9 +5,6 @@ export default function comingsoonPage() {
   return (
     <>
       <div>
-  <div className="page-loader" id="page-loader">
-    <div className="loader"><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /></div>
-  </div>{/* page loader */}
   <div className="theme-layout">
     <div className="coming-page">
       <div id="container-inside">

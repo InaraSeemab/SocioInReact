@@ -5,9 +5,6 @@ export default function signinPage() {
   return (
     <>
       <div>
-  <div className="page-loader" id="page-loader">
-    <div className="loader"><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /><span className="loader-item" /></div>
-  </div>{/* page loader */}
   <div className="theme-layout">
     <div className="authtication animated-circ">
       <div className="mockups"><img src="https://wpkixx.com/html/socimo/images/resources/login-1.png" alt /></div>
