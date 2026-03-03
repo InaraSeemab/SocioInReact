@@ -231,7 +231,7 @@ export default function Sidebar() {
                     </ul>
                 </li>
                 <li className="menu-item-has-children">
-                    <Link to="#" className title>
+                    <Link to="/blogs" className title>
                         <i className>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
