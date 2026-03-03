@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Slideshow = () => {
+const Slideshow = () => {
     return (
         <>
             <li>
@@ -284,3 +284,5 @@ export const Slideshow = () => {
         </>
     )
 }
+
+export default Slideshow

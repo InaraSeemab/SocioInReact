@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Dropdown = () => {
+const Dropdown = () => {
     return (
         <>
             <li>
@@ -286,3 +286,5 @@ export const Dropdown = () => {
         </>
     )
 }
+
+export default Dropdown

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Tooltip = () => {
+const Tooltip = () => {
     return (
         <>
             <li>
@@ -110,3 +110,5 @@ export const Tooltip = () => {
         </>
     )
 }
+
+export default Tooltip

@@ -18,11 +18,11 @@ import Notification from '../components/developmentComponentpage/Notifications';
 import Offcanvas from '../components/developmentComponentpage/Offcanvas';
 import SideSlideMsgPopup from '../components/developmentComponentpage/sideSlideMsgPopup';
 import InviteColleaguePopup from '../components/developmentComponentpage/inviteColleaguePopup';
-import { Scrollspy } from '../components/developmentComponentpage/Scrollspy';
-import { Tooltip } from '../components/developmentComponentpage/Tooltip';
-import { Slide } from '../components/developmentComponentpage/Slide';
-import { Slideshow } from '../components/developmentComponentpage/Slideshow';
-import { Progress } from '../components/developmentComponentpage/Progress';
+import Scrollspy from '../components/developmentComponentpage/Scrollspy';
+import Tooltip from '../components/developmentComponentpage/Tooltip';
+import Slide from '../components/developmentComponentpage/Slide';
+import Slideshow from '../components/developmentComponentpage/Slideshow';
+import Progress from '../components/developmentComponentpage/Progress';
 
 // import CarouselMenu from "../components/carouselmenu";
 export default function developmentcomponentPage() {

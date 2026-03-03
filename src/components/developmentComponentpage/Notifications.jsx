@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Notifications = () => {
+const Notifications = () => {
     return (
         <>
             <li>
@@ -151,3 +151,5 @@ export const Notifications = () => {
         </>
     )
 }
+
+export default Notifications

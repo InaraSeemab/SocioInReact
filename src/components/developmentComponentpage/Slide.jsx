@@ -1,7 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
-export const Slide = () => {
+const Slide = () => {
     return (
         <>
             <li>
@@ -407,3 +406,5 @@ export const Slide = () => {
         </>
     )
 }
+
+export default Slide

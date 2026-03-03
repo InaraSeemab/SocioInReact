@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const sideNavbar = () => {
+const sideNavbar = () => {
     return (
         <>
             <div className="col-lg-3 col-md-3">
@@ -25,3 +25,5 @@ export const sideNavbar = () => {
         </>
     )
 }
+
+export default sideNavbar

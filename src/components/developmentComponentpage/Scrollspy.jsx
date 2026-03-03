@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Scrollspy = () => {
+const Scrollspy = () => {
     return (
         <>
             <li>
@@ -148,3 +148,5 @@ export const Scrollspy = () => {
         </>
     )
 }
+
+export default Scrollspy

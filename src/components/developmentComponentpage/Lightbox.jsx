@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Lightbox = () => {
+const Lightbox = () => {
     return (
         <>
             <li>
@@ -100,3 +100,5 @@ export const Lightbox = () => {
         </>
     )
 }
+
+export default Lightbox

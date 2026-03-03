@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Accordion = () => {
+const Accordion = () => {
     return (
         <>
             <li>
@@ -212,3 +212,5 @@ export const Accordion = () => {
         </>
     )
 }
+
+export default Accordion

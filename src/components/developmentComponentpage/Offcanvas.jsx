@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Offcanvas = () => {
+const Offcanvas = () => {
     return (
         <>
             <li>
@@ -223,3 +223,5 @@ export const Offcanvas = () => {
         </>
     )
 }
+
+export default Offcanvas

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Filter = () => {
+const Filter = () => {
     return (
         <>
             <li>
@@ -491,3 +491,5 @@ export const Filter = () => {
         </>
     )
 }
+
+export default Filter
