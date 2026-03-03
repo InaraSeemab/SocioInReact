@@ -88,12 +88,7 @@ export default function indexPage() {
               </form>
             </div>
           </div>
-          {/* responsive header */}
 
-
-          {/* nav sidebar */}
-
-          {/* carousel menu */}
           <section>
             <div className="gap">
               <div className="container">

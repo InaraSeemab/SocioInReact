@@ -83,20 +83,16 @@ export default function Header() {
                 <ul className="web-elements">
                     <li>
                         <div className="user-dp">
-                            <a href="profile-page2.html" title>
+                            <Link to="/profile-page2" title>
                                 <img alt src="images/resources/user.jpg" />
                                 <div className="name">
                                     <h4>Danial Cardos</h4>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </li>
                     <li className="go-live">
-                        <a
-                            href="live-stream.html"
-                            title="Go Live"
-                            data-toggle="tooltip"
-                        >
+                        <Link to="/live-stream" title="Go Live" data-toggle="tooltip">
                             <i>
                                 <svg
                                     fill="#f00"
@@ -105,13 +101,13 @@ export default function Header() {
                                     width="18px"
                                     height="18px"
                                 >
-                                    <path d="M 6.1015625 6.1015625 C 3.5675625 8.6345625 2 12.134 2 16 C 2 19.866 3.5675625 23.365437 6.1015625 25.898438 L 7.5195312 24.480469 C 5.3465312 22.307469 4 19.308 4 16 C 4 12.692 5.3465312 9.6925313 7.5195312 7.5195312 L 6.1015625 6.1015625 z M 25.898438 6.1015625 L 24.480469 7.5195312 C 26.653469 9.6925312 28 12.692 28 16 C 28 19.308 26.653469 22.307469 24.480469 24.480469 L 25.898438 25.898438 C 28.432437 23.365437 30 19.866 30 16 C 30 12.134 28.432437 8.6345625 25.898438 6.1015625 z M 9.6367188 9.6367188 C 8.0077188 11.265719 7 13.515 7 16 C 7 18.485 8.0077187 20.734281 9.6367188 22.363281 L 11.052734 20.947266 C 9.7847344 19.680266 9 17.93 9 16 C 9 14.07 9.7847344 12.319734 11.052734 11.052734 L 9.6367188 9.6367188 z M 22.363281 9.6367188 L 20.947266 11.052734 C 22.215266 12.319734 23 14.07 23 16 C 23 17.93 22.215266 19.680266 20.947266 20.947266 L 22.363281 22.363281 C 23.992281 20.734281 25 18.485 25 16 C 25 13.515 23.992281 11.265719 22.363281 9.6367188 z M 16 12 A 4 4 0 0 0 16 20 A 4 4 0 0 0 16 12 z" />
+                                    <path d="M 6.1015625 6.1015625 C 3.5675625 8.6345625 2 12.134 2 16 C 2 19.866 3.5675625 23.365437 6.1015625 25.898438 L 7.5195312 24.480469 C 5.3465312 22.307469 4 19.308 4 16 C 4 12.692 5.3465312 9.6925313 7.5195312 7.5195312 L 6.1015625 6.1015625 z M 25.898438 6.1015625 L 24.480469 7.5195312 C 26.653469 9.6925312 28 12.692 28 16 C 28 19.308 26.653469 22.307469 24.480469 24.480469 L 25.898438 25.898438 C 28.432437 23.365437 30 19.866 30 16 C 30 12.134 28.432437 8.6345625 25.898438 6.1015625 z M 9.6367188 9.6367188 C 8.0077188 11.265719 7 13.515 7 16 C 7 18.485 8.0077187 20.734281 9.6367188 22.363281 L 11.052734 20.947266 C 9.7847344 19.680266 9 17.93 9 16 C 9 14.07 9.7847344 12.319734 11.052734 11.052734 L 9.6367188 9.6367188 z M 22.363281 9.6367188 L 20.947266 11.052734 C 22.215266 12.319734 23 14.07 23 16 C 23 17.93 22.215266 19.680266 20.947266 20.947266 L 22.363281 22.363281 C 23.992281 20.734281 25 18.485 25 16 C 25 12.134 23.992281 8.6345625 22.363281 6.1015625 z M 16 12 A 4 4 0 0 0 16 20 A 4 4 0 0 0 16 12 z" />
                                 </svg>
                             </i>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="index.html" title="Home" data-toggle="tooltip">
+                        <Link to="/" title="Home" data-toggle="tooltip">
                             <i>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -129,12 +125,12 @@ export default function Header() {
                                     <polyline points="9 22 9 12 15 12 15 22" />
                                 </svg>
                             </i>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a
+                        <Link
                             className="mesg-notif"
-                            href="#"
+                            to="#"
                             title="Messages"
                             data-toggle="tooltip"
                         >
@@ -154,13 +150,13 @@ export default function Header() {
                                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                                 </svg>
                             </i>
-                        </a>
+                        </Link>
                         <span />
                     </li>
                     <li>
-                        <a
+                        <Link
                             className="mesg-notif"
-                            href="#"
+                            to="#"
                             title="Notifications"
                             data-toggle="tooltip"
                         >
@@ -181,13 +177,13 @@ export default function Header() {
                                     <path d="M13.73 21a2 2 0 0 1-3.46 0" />
                                 </svg>
                             </i>
-                        </a>
+                        </Link>
                         <span />
                     </li>
                     <li>
-                        <a
+                        <Link
                             className="create"
-                            href="#"
+                            to="#"
                             title="Add New"
                             data-toggle="tooltip"
                         >
@@ -208,10 +204,10 @@ export default function Header() {
                                     <line x1={5} y1={12} x2={19} y2={12} />
                                 </svg>
                             </i>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" title>
+                        <Link to="/" title>
                             <i>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -231,7 +227,7 @@ export default function Header() {
                                     <rect x={3} y={14} width={7} height={7} />
                                 </svg>
                             </i>
-                        </a>
+                        </Link>
                         <ul className="dropdown">
                             <li>
                                 <Link to="/profile" title>
@@ -244,7 +240,7 @@ export default function Header() {
                                 </Link>
                             </li>
                             <li>
-                                <Link className="invite-new" to="#" title>
+                                <Link className="invite-new" to="/invite-colleague" title>
                                     <i className="icofont-brand-slideshare" /> Invite
                                     Collegue
                                 </Link>

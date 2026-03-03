@@ -2,18 +2,19 @@
 import React from 'react';
 import Header from "../components/header";
 import Sidebar from "../components/sidebar";
-
+import CarouselMenu from "../components/carouselmenu";
 export default function aboutuniversityPage() {
   return (
     <>
       <Header />
       <Sidebar />
+      <CarouselMenu />
       <div>
         <div className="theme-layout">
           <div className="responsive-header">
             <div className="logo res"><img src="images/logo.png" alt /><span>Socimo</span></div>
             <div className="user-avatar mobile">
-              <a href="profile.html" title="View Profile"><img alt src="images/resources/user.jpg" /></a>
+              <Link to="/profile" title="View Profile"><img alt src="images/resources/user.jpg" /></Link>
               <div className="name">
                 <h4>Danial Cardos</h4>
                 <span>Ontario, Canada</span>
@@ -36,84 +37,6 @@ export default function aboutuniversityPage() {
               </form>
             </div>
           </div>{/* responsive header */}
-
-
-          <section>
-            <div className="white-bg">
-              <div className="container-fluid">
-                <div className="menu-caro">
-                  <div className="row">
-                    <div className="col-lg-2">
-                      <div className="sidemenu">
-                        <i>
-                          <svg id="side-menu" xmlns="http://www.w3.org/2000/svg" width={26} height={26} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-menu"><line x1={3} y1={12} x2={21} y2={12} /><line x1={3} y1={6} x2={21} y2={6} /><line x1={3} y1={18} x2={21} y2={18} /></svg></i>
-                      </div>
-                    </div>
-                    <div className="col-lg-8">
-                      <div className="page-caro">
-                        <div className="link-item">
-                          <a className="active" href="feed.html" title>
-                            <i className>
-                              <svg className="feather feather-zap" strokeLinejoin="round" strokeLinecap="round" strokeWidth={2} stroke="currentColor" fill="none" viewBox="0 0 24 24" height={24} width={24} xmlns="http://www.w3.org/2000/svg"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" /></svg>
-                            </i>
-                            <p>Newsfeed</p>
-                          </a>
-                        </div>
-                        <div className="link-item">
-                          <a href="videos.html" title>
-                            <i className>
-                              <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-youtube"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" /><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" /></svg>
-                            </i>
-                            <p>Videos</p>
-                          </a>
-                        </div>
-                        <div className="link-item">
-                          <a href="courses.html" title>
-                            <i className>
-                              <svg className="feather feather-airplay" strokeLinejoin="round" strokeLinecap="round" strokeWidth={2} stroke="currentColor" fill="none" viewBox="0 0 24 24" height={24} width={24} xmlns="http://www.w3.org/2000/svg"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1" /><polygon points="12 15 17 21 7 21 12 15" /></svg></i>
-                            <p>Courses</p>
-                          </a>
-                        </div>
-                        <div className="link-item">
-                          <a href="books.html" title>
-                            <i className>
-                              <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-book"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" /></svg></i>
-                            <p>Books</p>
-                          </a>
-                        </div>
-                        <div className="link-item">
-                          <a href="blog.html" title>
-                            <i className><svg className="feather feather-layout" strokeLinejoin="round" strokeLinecap="round" strokeWidth={2} stroke="currentColor" fill="none" viewBox="0 0 24 24" height={24} width={24} xmlns="http://www.w3.org/2000/svg"><rect ry={2} rx={2} height={18} width={18} y={3} x={3} /><line y2={9} x2={21} y1={9} x1={3} /><line y2={9} x2={9} y1={21} x1={9} /></svg></i>
-                            <p>Blog</p>
-                          </a>
-                        </div>
-                        <div className="link-item">
-                          <a href="groups.html" title>
-                            <i className>
-                              <svg className="feather feather-users" strokeLinejoin="round" strokeLinecap="round" strokeWidth={2} stroke="currentColor" fill="none" viewBox="0 0 24 24" height={24} width={24} xmlns="http://www.w3.org/2000/svg"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle r={4} cy={7} cx={9} /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
-                            </i>
-                            <p>Groups</p>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-2">
-                      <div className="user-inf">
-                        <div className="folowerz">Followers: 204</div>
-                        <ul className="stars">
-                          <li><i className="icofont-star" /></li>
-                          <li><i className="icofont-star" /></li>
-                          <li><i className="icofont-star" /></li>
-                          <li><i className="icofont-star" /></li>
-                          <li><i className="icofont-star" /></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>{/* carousel menu */}
           <div className="gap no-gap">
             <div className="top-area mate-black low-opacity">
               <div className="bg-image" style={{ backgroundImage: 'url(https://wpkixx.com/html/socimo/images/resources/top-bg2.jpg)' }} />
@@ -128,16 +51,16 @@ export default function aboutuniversityPage() {
                           <span>Antalya, Turky</span>
                         </div>
                         <ul className="sharing-options">
-                          <li><a title="Invite Colleagues" href="#" data-toggle="tooltip"><i className="icofont-id-card" /></a> </li>
-                          <li><a title="Follow" href="#" data-toggle="tooltip"><i className="icofont-star" /></a> </li>
-                          <li><a title="Share" href="#" data-toggle="tooltip"><i className="icofont-share-alt" /></a> </li>
+                          <li><Link title="Invite Colleagues" to="#" data-toggle="tooltip"><i className="icofont-id-card" /></Link> </li>
+                          <li><Link title="Follow" to="#" data-toggle="tooltip"><i className="icofont-star" /></Link> </li>
+                          <li><Link title="Share" to="#" data-toggle="tooltip"><i className="icofont-share-alt" /></Link> </li>
                         </ul>
-                        <a className="invite" href="#" title data-ripple>Invite Colleagues</a>
+                        <Link className="invite" to="#" title data-ripple>Invite Colleagues</Link>
                       </div>
                       <ul className="nav nav-tabs post-detail-btn">
-                        <li className="nav-item"><a className="active" href="#link11" data-toggle="tab">Overview</a></li>
-                        <li className="nav-item"><a className href="#link12" data-toggle="tab">Departments</a></li>
-                        <li className="nav-item"><a className href="#link13" data-toggle="tab">Members</a></li>
+                        <li className="nav-item"><Link className="active" to="#link11" data-toggle="tab">Overview</Link></li>
+                        <li className="nav-item"><Link className to="#link12" data-toggle="tab">Departments</Link></li>
+                        <li className="nav-item"><Link className to="#link13" data-toggle="tab">Members</Link></li>
                       </ul>
                     </div>
                   </div>
@@ -153,7 +76,7 @@ export default function aboutuniversityPage() {
                     <div id="page-contents" className="row merged20">
                       <div className="col-lg-8">
                         <div className="tab-content">
-                          <div className="tab-pane fade show active" id="link11">
+                          <div className="tab-pane fade show active" id="link11" data-toggle="tab">
                             <div className="main-wraper">
                               <h4 className="main-title">Information</h4>
                               <div className="uni-info">
@@ -182,7 +105,7 @@ export default function aboutuniversityPage() {
                               </div>
                             </div>
                             <div className="main-wraper">
-                              <h4 className="main-title">Departments <a href="#" title>view all</a></h4>
+                              <h4 className="main-title">Departments <Link to="#" title>view all</Link></h4>
                               <div className="dept-info">
                                 <ul>
                                   <li>
@@ -201,14 +124,14 @@ export default function aboutuniversityPage() {
                               </div>
                             </div>
                             <div className="main-wraper">
-                              <h4 className="main-title">Members <span>(254)</span> <a href="#" title>view all</a></h4>
+                              <h4 className="main-title">Members <span>(254)</span> <Link to="#" title>view all</Link></h4>
                               <div className="row col-xs-6 merged-10">
                                 <div className="col-lg-3 col-md-3 col-sm-6">
                                   <div className="members">
                                     <figure><img alt src="images/resources/speak-1.jpg" /></figure>
                                     <span>Amy Watson</span>
                                     <ins>Department of Sociology</ins>
-                                    <a data-ripple title href="#"><i className="icofont-star" /> Follow</a>
+                                    <Link data-ripple title to="#"><i className="icofont-star" /> Follow</Link>
                                   </div>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-6">
@@ -216,7 +139,7 @@ export default function aboutuniversityPage() {
                                     <figure><img alt src="images/resources/speak-2.jpg" /></figure>
                                     <span>Muhammad A.</span>
                                     <ins>Department of zovology</ins>
-                                    <a data-ripple title href="#"><i className="icofont-star" /> Follow</a>
+                                    <Link data-ripple title to="#"><i className="icofont-star" /> Follow</Link>
                                   </div>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-6">
@@ -224,7 +147,7 @@ export default function aboutuniversityPage() {
                                     <figure><img alt src="images/resources/speak-3.jpg" /></figure>
                                     <span>Sara Jean</span>
                                     <ins>Department of Sociology</ins>
-                                    <a data-ripple title href="#"><i className="icofont-star" /> Follow</a>
+                                    <Link data-ripple title to="#"><i className="icofont-star" /> Follow</Link>
                                   </div>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-6">
@@ -232,7 +155,7 @@ export default function aboutuniversityPage() {
                                     <figure><img alt src="https://wpkixx.com/html/socimo/images/resources/speak-4.jpg" /></figure>
                                     <span>William Jhon</span>
                                     <ins>Department of Biologye</ins>
-                                    <a data-ripple title href="#"><i className="icofont-star" /> Follow</a>
+                                    <Link data-ripple title to="#"><i className="icofont-star" /> Follow</Link>
                                   </div>
                                 </div>
                               </div>
@@ -305,7 +228,7 @@ export default function aboutuniversityPage() {
                                     <figure><img alt src="images/resources/speak-1.jpg" /></figure>
                                     <span>Amy Watson</span>
                                     <ins>Department of Sociology</ins>
-                                    <a data-ripple title href="#"><i className="icofont-star" /> Follow</a>
+                                    <Link data-ripple title to="#"><i className="icofont-star" /> Follow</Link>
                                   </div>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-6">
@@ -313,7 +236,7 @@ export default function aboutuniversityPage() {
                                     <figure><img alt src="images/resources/speak-2.jpg" /></figure>
                                     <span>Muhammad A.</span>
                                     <ins>Department of zovology</ins>
-                                    <a data-ripple title href="#"><i className="icofont-star" /> Follow</a>
+                                    <Link data-ripple title to="#"><i className="icofont-star" /> Follow</Link>
                                   </div>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-6">
@@ -321,7 +244,7 @@ export default function aboutuniversityPage() {
                                     <figure><img alt src="images/resources/speak-3.jpg" /></figure>
                                     <span>Sara Jean</span>
                                     <ins>Department of Sociology</ins>
-                                    <a data-ripple title href="#"><i className="icofont-star" /> Follow</a>
+                                    <Link data-ripple title to="#"><i className="icofont-star" /> Follow</Link>
                                   </div>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-6">
@@ -329,7 +252,7 @@ export default function aboutuniversityPage() {
                                     <figure><img alt src="https://wpkixx.com/html/socimo/images/resources/speak-4.jpg" /></figure>
                                     <span>William Jhon</span>
                                     <ins>Department of Biologye</ins>
-                                    <a data-ripple title href="#"><i className="icofont-star" /> Follow</a>
+                                    <Link data-ripple title to="#"><i className="icofont-star" /> Follow</Link>
                                   </div>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-6">
@@ -337,7 +260,7 @@ export default function aboutuniversityPage() {
                                     <figure><img alt src="https://wpkixx.com/html/socimo/images/resources/speak-5.jpg" /></figure>
                                     <span>Amy Watson</span>
                                     <ins>Department of Sociology</ins>
-                                    <a data-ripple title href="#"><i className="icofont-star" /> Follow</a>
+                                    <Link data-ripple title to="#"><i className="icofont-star" /> Follow</Link>
                                   </div>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-6">
@@ -345,7 +268,7 @@ export default function aboutuniversityPage() {
                                     <figure><img alt src="https://wpkixx.com/html/socimo/images/resources/speak-6.jpg" /></figure>
                                     <span>Maria K.</span>
                                     <ins>Department of zovology</ins>
-                                    <a data-ripple title href="#"><i className="icofont-star" /> Follow</a>
+                                    <Link data-ripple title to="#"><i className="icofont-star" /> Follow</Link>
                                   </div>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-6">
@@ -353,7 +276,7 @@ export default function aboutuniversityPage() {
                                     <figure><img alt src="https://wpkixx.com/html/socimo/images/resources/speak-7.jpg" /></figure>
                                     <span>Zing Zang</span>
                                     <ins>Department of Sociology</ins>
-                                    <a data-ripple title href="#"><i className="icofont-star" /> Follow</a>
+                                    <Link data-ripple title to="#"><i className="icofont-star" /> Follow</Link>
                                   </div>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-6">
@@ -361,7 +284,7 @@ export default function aboutuniversityPage() {
                                     <figure><img alt src="https://wpkixx.com/html/socimo/images/resources/speak-8.jpg" /></figure>
                                     <span>William Jhon</span>
                                     <ins>Department of Biologye</ins>
-                                    <a data-ripple title href="#"><i className="icofont-star" /> Follow</a>
+                                    <Link data-ripple title to="#"><i className="icofont-star" /> Follow</Link>
                                   </div>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-6">
@@ -369,7 +292,7 @@ export default function aboutuniversityPage() {
                                     <figure><img alt src="https://wpkixx.com/html/socimo/images/resources/speak-9.jpg" /></figure>
                                     <span>Sara Will</span>
                                     <ins>Department of Biologye</ins>
-                                    <a data-ripple title href="#"><i className="icofont-star" /> Follow</a>
+                                    <Link data-ripple title to="#"><i className="icofont-star" /> Follow</Link>
                                   </div>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-6">
@@ -377,7 +300,7 @@ export default function aboutuniversityPage() {
                                     <figure><img alt src="https://wpkixx.com/html/socimo/images/resources/speak-10.jpg" /></figure>
                                     <span>Emily Jane</span>
                                     <ins>Department of Biologye</ins>
-                                    <a data-ripple title href="#"><i className="icofont-star" /> Follow</a>
+                                    <Link data-ripple title to="#"><i className="icofont-star" /> Follow</Link>
                                   </div>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-6">
@@ -385,7 +308,7 @@ export default function aboutuniversityPage() {
                                     <figure><img alt src="https://wpkixx.com/html/socimo/images/resources/speak-11.jpg" /></figure>
                                     <span>Bunny Bill</span>
                                     <ins>Department of Biologye</ins>
-                                    <a data-ripple title href="#"><i className="icofont-star" /> Follow</a>
+                                    <Link data-ripple title to="#"><i className="icofont-star" /> Follow</Link>
                                   </div>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-6">
@@ -393,7 +316,7 @@ export default function aboutuniversityPage() {
                                     <figure><img alt src="https://wpkixx.com/html/socimo/images/resources/speak-12.jpg" /></figure>
                                     <span>William Sam</span>
                                     <ins>Department of Biologye</ins>
-                                    <a data-ripple title href="#"><i className="icofont-star" /> Follow</a>
+                                    <Link data-ripple title to="#"><i className="icofont-star" /> Follow</Link>
                                   </div>
                                 </div>
                               </div>
@@ -418,19 +341,19 @@ export default function aboutuniversityPage() {
                             <div className="ask-question">
                               <i className="icofont-question-circle" />
                               <h6>Ask questions in Q&amp;A to get help from experts in your field.</h6>
-                              <a className="ask-qst" href="#" title>Ask a question</a>
+                              <Link className="ask-qst" to="#" title>Ask a question</Link>
                             </div>
                           </div>
                           <div className="widget">
-                            <h4 className="widget-title">Explor Events <a className="see-all" href="#" title>See All</a></h4>
+                            <h4 className="widget-title">Explor Events <Link className="see-all" to="#" title>See All</Link></h4>
                             <div className="rec-events bg-purple">
                               <i className="icofont-gift" />
-                              <h6><a title href>BZ University good night event in columbia</a></h6>
+                              <h6><Link title to>BZ University good night event in columbia</Link></h6>
                               <img alt src="https://wpkixx.com/html/socimo/images/clock.png" />
                             </div>
                             <div className="rec-events bg-blue">
                               <i className="icofont-microphone" />
-                              <h6><a title href>The 3rd International Conference 2020</a></h6>
+                              <h6><Link title to>The 3rd International Conference 2020</Link></h6>
                               <img alt src="https://wpkixx.com/html/socimo/images/clock.png" />
                             </div>
                           </div>
@@ -441,50 +364,50 @@ export default function aboutuniversityPage() {
                                 <figure><img alt src="https://wpkixx.com/html/socimo/images/resources/friend-avatar.jpg" /></figure>
                                 <div className="friend-meta">
                                   <h4>
-                                    <a title href="https://wpkixx.com/html/socimo/time-line.html">Kelly Bill</a>
+                                    <Link title to="https://wpkixx.com/html/socimo/time-line.html">Kelly Bill</Link>
                                     <span>Dept colleague</span>
                                   </h4>
-                                  <a className="underline" title href="#">Follow</a>
+                                  <Link className="underline" title to="#">Follow</Link>
                                 </div>
                               </li>
                               <li>
                                 <figure><img alt src="https://wpkixx.com/html/socimo/images/resources/friend-avatar2.jpg" /></figure>
                                 <div className="friend-meta">
                                   <h4>
-                                    <a title href="https://wpkixx.com/html/socimo/time-line.html">Issabel</a>
+                                    <Link title to="https://wpkixx.com/html/socimo/time-line.html">Issabel</Link>
                                     <span>Dept colleague</span>
                                   </h4>
-                                  <a className="underline" title href="#">Follow</a>
+                                  <Link className="underline" title to="#">Follow</Link>
                                 </div>
                               </li>
                               <li>
                                 <figure><img alt src="https://wpkixx.com/html/socimo/images/resources/friend-avatar3.jpg" /></figure>
                                 <div className="friend-meta">
                                   <h4>
-                                    <a title href="https://wpkixx.com/html/socimo/time-line.html">Andrew</a>
+                                    <Link title to="https://wpkixx.com/html/socimo/time-line.html">Andrew</Link>
                                     <span>Dept colleague</span>
                                   </h4>
-                                  <a className="underline" title href="#">Follow</a>
+                                  <Link className="underline" title to="#">Follow</Link>
                                 </div>
                               </li>
                               <li>
                                 <figure><img alt src="https://wpkixx.com/html/socimo/images/resources/friend-avatar4.jpg" /></figure>
                                 <div className="friend-meta">
                                   <h4>
-                                    <a title href="https://wpkixx.com/html/socimo/time-line.html">Sophia</a>
+                                    <Link title to="https://wpkixx.com/html/socimo/time-line.html">Sophia</Link>
                                     <span>Dept colleague</span>
                                   </h4>
-                                  <a className="underline" title href="#">Follow</a>
+                                  <Link className="underline" title to="#">Follow</Link>
                                 </div>
                               </li>
                               <li>
                                 <figure><img alt src="https://wpkixx.com/html/socimo/images/resources/friend-avatar5.jpg" /></figure>
                                 <div className="friend-meta">
                                   <h4>
-                                    <a title href="https://wpkixx.com/html/socimo/time-line.html">Allen</a>
+                                    <Link title to="https://wpkixx.com/html/socimo/time-line.html">Allen</Link>
                                     <span>Dept colleague</span>
                                   </h4>
-                                  <a className="underline" title href="#">Follow</a>
+                                  <Link className="underline" title to="#">Follow</Link>
                                 </div>
                               </li>
                             </ul>
@@ -556,51 +479,51 @@ export default function aboutuniversityPage() {
             <span className="popup-closed"><i className="icofont-close" /></span>
             <div className="slide-meta">
               <ul className="nav nav-tabs slide-btns">
-                <li className="nav-item"><a className="active" href="#messages" data-toggle="tab">Messages</a></li>
-                <li className="nav-item"><a className href="#notifications" data-toggle="tab">Notifications</a></li>
+                <li className="nav-item"><Link className="active" href="#messages" data-toggle="tab">Messages</Link></li>
+                <li className="nav-item"><Link className href="#notifications" data-toggle="tab">Notifications</Link></li>
               </ul>
               <div className="tab-content">
                 <div className="tab-pane active fade show" id="messages">
                   <h4><i className="icofont-envelope" /> messages</h4>
-                  <a href="#" className="send-mesg" title="New Message" data-toggle="tooltip"><i className="icofont-edit" /></a>
+                  <Link to="#" className="send-mesg" title="New Message" data-toggle="tooltip"><i className="icofont-edit" /></Link>
                   <ul className="new-messages">
                     <li>
                       <figure><img src="images/resources/user1.jpg" alt /></figure>
                       <div className="mesg-info">
                         <span>Ibrahim Ahmed</span>
-                        <a href="#" title>Helo dear i wanna talk to you</a>
+                        <Link to="#" title>Helo dear i wanna talk to you</Link>
                       </div>
                     </li>
                     <li>
                       <figure><img src="images/resources/user2.jpg" alt /></figure>
                       <div className="mesg-info">
                         <span>Fatima J.</span>
-                        <a href="#" title>Helo dear i wanna talk to you</a>
+                        <Link to="#" title>Helo dear i wanna talk to you</Link>
                       </div>
                     </li>
                     <li>
                       <figure><img src="images/resources/user3.jpg" alt /></figure>
                       <div className="mesg-info">
                         <span>Fawad Ahmed</span>
-                        <a href="#" title>Helo dear i wanna talk to you</a>
+                        <Link to="#" title>Helo dear i wanna talk to you</Link>
                       </div>
                     </li>
                     <li>
                       <figure><img src="images/resources/user4.jpg" alt /></figure>
                       <div className="mesg-info">
                         <span>Saim Turan</span>
-                        <a href="#" title>Helo dear i wanna talk to you</a>
+                        <Link to="#" title>Helo dear i wanna talk to you</Link>
                       </div>
                     </li>
                     <li>
                       <figure><img src="images/resources/user5.jpg" alt /></figure>
                       <div className="mesg-info">
                         <span>Alis wells</span>
-                        <a href="#" title>Helo dear i wanna talk to you</a>
+                        <Link to="#" title>Helo dear i wanna talk to you</Link>
                       </div>
                     </li>
                   </ul>
-                  <a href="#" title className="main-btn" data-ripple>view all</a>
+                  <Link to="#" title className="main-btn" data-ripple>view all</Link>
                 </div>
                 <div className="tab-pane fade" id="notifications">
                   <h4><i className="icofont-bell-alt" /> notifications</h4>
@@ -609,39 +532,39 @@ export default function aboutuniversityPage() {
                       <figure><img src="images/resources/user5.jpg" alt /></figure>
                       <div className="mesg-info">
                         <span>Alis wells</span>
-                        <a href="#" title>recommend your post</a>
+                        <Link to="#" title>recommend your post</Link>
                       </div>
                     </li>
                     <li>
                       <figure><img src="images/resources/user4.jpg" alt /></figure>
                       <div className="mesg-info">
                         <span>Alis wells</span>
-                        <a href="#" title>share your post <strong>a good time today!</strong></a>
+                        <Link to="#" title>share your post <strong>a good time today!</strong></Link>
                       </div>
                     </li>
                     <li>
                       <figure><img src="images/resources/user2.jpg" alt /></figure>
                       <div className="mesg-info">
                         <span>Alis wells</span>
-                        <a href="#" title>recommend your post</a>
+                        <Link to="#" title>recommend your post</Link>
                       </div>
                     </li>
                     <li>
                       <figure><img src="images/resources/user1.jpg" alt /></figure>
                       <div className="mesg-info">
                         <span>Alis wells</span>
-                        <a href="#" title>share your post <strong>a good time today!</strong></a>
+                        <Link to="#" title>share your post <strong>a good time today!</strong></Link>
                       </div>
                     </li>
                     <li>
                       <figure><img src="images/resources/user3.jpg" alt /></figure>
                       <div className="mesg-info">
                         <span>Alis wells</span>
-                        <a href="#" title>recommend your post</a>
+                        <Link to="#" title>recommend your post</Link>
                       </div>
                     </li>
                   </ul>
-                  <a href="#" title className="main-btn" data-ripple>view all</a>
+                  <Link to="#" title className="main-btn" data-ripple>view all</Link>
                 </div>
               </div>
             </div>
@@ -771,56 +694,56 @@ export default function aboutuniversityPage() {
                 <textarea placeholder="Write Something" defaultValue={""} />
               </form>
               <ul>
-                <li><a title href="#">Your Timeline</a></li>
-                <li className="friends"><a title href="#">To Friends</a></li>
-                <li className="socialz"><a className="active" title href="#">Social Media</a></li>
+                <li><Link to="#" title>Your Timeline</Link></li>
+                <li className="friends"><Link to="#" title>To Friends</Link></li>
+                <li className="socialz"><Link to="#" className="active" title>Social Media</Link></li>
               </ul>
               <div style={{ display: 'block' }} className="social-media">
                 <ul>
-                  <li><a title href="#" className="facebook"><i className="icofont-facebook" /></a></li>
-                  <li><a title href="#" className="twitter"><i className="icofont-twitter" /></a></li>
-                  <li><a title href="#" className="instagram"><i className="icofont-instagram" /></a></li>
-                  <li><a title href="#" className="pinterest"><i className="icofont-pinterest" /></a></li>
-                  <li><a title href="#" className="youtube"><i className="icofont-youtube" /></a></li>
-                  <li><a title href="#" className="dribble"><i className="icofont-dribbble" /></a></li>
-                  <li><a title href="#" className="behance"><i className="icofont-behance-original" /></a></li>
+                  <li><Link to="#" title href="#" className="facebook"><i className="icofont-facebook" /></Link></li>
+                  <li><Link to="#" title href="#" className="twitter"><i className="icofont-twitter" /></Link></li>
+                  <li><Link to="#" title href="#" className="instagram"><i className="icofont-instagram" /></Link></li>
+                  <li><Link to="#" title href="#" className="pinterest"><i className="icofont-pinterest" /></Link></li>
+                  <li><Link to="#" title href="#" className="youtube"><i className="icofont-youtube" /></Link></li>
+                  <li><Link to="#" title href="#" className="dribble"><i className="icofont-dribbble" /></Link></li>
+                  <li><Link to="#" title href="#" className="behance"><i className="icofont-behance-original" /></Link></li>
                 </ul>
               </div>
               <div style={{ display: 'none' }} className="friends-to">
                 <div className="follow-men">
                   <figure><img className="mCS_img_loaded" src="images/resources/user1.jpg" alt /></figure>
                   <div className="follow-meta">
-                    <h5><a href="#" title>Jack Carter</a></h5>
+                    <h5><Link to="#" title>Jack Carter</Link></h5>
                     <span>family member</span>
                   </div>
-                  <a href="#" title>Share</a>
+                  <Link to="#" title>Share</Link>
                 </div>
                 <div className="follow-men">
                   <figure><img className="mCS_img_loaded" src="images/resources/user2.jpg" alt /></figure>
                   <div className="follow-meta">
-                    <h5><a href="#" title>Xang Ching</a></h5>
+                    <h5><Link to="#" title>Xang Ching</Link></h5>
                     <span>Close Friend</span>
                   </div>
-                  <a href="#" title>Share</a>
+                  <Link to="#" title>Share</Link>
                 </div>
                 <div className="follow-men">
                   <figure><img className="mCS_img_loaded" src="images/resources/user3.jpg" alt /></figure>
                   <div className="follow-meta">
-                    <h5><a href="#" title>Emma Watson</a></h5>
+                    <h5><Link to="#" title>Emma Watson</Link></h5>
                     <span>Matul Friend</span>
                   </div>
-                  <a href="#" title>Share</a>
+                  <Link to="#" title>Share</Link>
                 </div>
               </div>
               <button type="submit" className="main-btn">Publish</button>
             </div>
           </div>{/* share post */}
           <div className="cart-product">
-            <a href="product-cart.html" title="View Cart" data-toggle="tooltip"><i className="icofont-cart-alt" /></a>
+            <Link to="/product-cart" title="View Cart" data-toggle="tooltip"><i className="icofont-cart-alt" /></Link>
             <span>03</span>
           </div>{/* view cart button */}
           <div className="chat-live">
-            <a className="chat-btn" href="#" title="Start Live Chat" data-toggle="tooltip"><i className="icofont-facebook-messenger" /></a>
+            <Link to="/product-cart" title="Start Live Chat" data-toggle="tooltip"><i className="icofont-facebook-messenger" /></Link>
             <span>07</span>
           </div>{/* chat button */}
           <div className="chat-box">
@@ -833,103 +756,103 @@ export default function aboutuniversityPage() {
             </div>
             <div className="user-tabs">
               <ul className="nav nav-tabs">
-                <li className="nav-item"><a className="active" href="#link1" data-toggle="tab">All Friends</a></li>
-                <li className="nav-item"><a className href="#link2" data-toggle="tab">Active</a><em>3</em></li>
-                <li className="nav-item"><a className href="#link3" data-toggle="tab">Groups</a></li>
+                <li className="nav-item"><Link className="active" to="#link1" data-toggle="tab">All Friends</Link></li>
+                <li className="nav-item"><Link className href="#link2" data-toggle="tab">Active</Link><em>3</em></li>
+                <li className="nav-item"><Link className href="#link3" data-toggle="tab">Groups</Link></li>
               </ul>
               {/* Tab panes */}
               <div className="tab-content">
                 <div className="tab-pane active fade show " id="link1">
                   <div className="friend">
-                    <a href="#" title>
+                    <Link to="#" title>
                       <figure>
                         <img src="images/resources/user1.jpg" alt />
                         <span className="status online" />
                       </figure>
                       <span>Oliver</span>
                       <i className><img src="images/resources/user1.jpg" alt /></i>
-                    </a>
-                    <a href="#" title>
+                    </Link>
+                    <Link to="#" title>
                       <figure>
                         <img src="images/resources/user2.jpg" alt />
                         <span className="status away" />
                       </figure>
                       <span>Amelia</span>
                       <i className="icofont-check-circled" />
-                    </a>
-                    <a href="#" title>
+                    </Link>
+                    <Link to="#" title>
                       <figure>
                         <img src="images/resources/user3.jpg" alt />
                         <span className="status offline" />
                       </figure>
                       <span>George</span>
                       <i className><img src="images/resources/user3.jpg" alt /></i>
-                    </a>
-                    <a href="#" title>
+                    </Link>
+                    <Link to="#" title>
                       <figure>
                         <img src="images/resources/user4.jpg" alt />
                         <span className="status online" />
                       </figure>
                       <span>Jacob</span>
                       <i className="icofont-check-circled" />
-                    </a>
-                    <a href="#" title>
+                    </Link>
+                    <Link to="#" title>
                       <figure>
                         <img src="images/resources/user5.jpg" alt />
                         <span className="status away" />
                       </figure>
                       <span>Poppy</span>
                       <i className="icofont-check-circled" />
-                    </a>
-                    <a href="#" title>
+                    </Link>
+                    <Link to="#" title>
                       <figure>
                         <img src="images/resources/user6.jpg" alt />
                         <span className="status online" />
                       </figure>
                       <span>Sophia</span>
                       <i className><img src="images/resources/user6.jpg" alt /></i>
-                    </a>
-                    <a href="#" title>
+                    </Link>
+                    <Link to="#" title>
                       <figure>
                         <img src="images/resources/user7.jpg" alt />
                         <span className="status away" />
                       </figure>
                       <span>Leo king</span>
                       <i className><img src="images/resources/user7.jpg" alt /></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="tab-pane fade" id="link2">
                   <div className="friend">
-                    <a href="#" title>
+                    <Link to="#" title>
                       <figure>
                         <img src="images/resources/user1.jpg" alt />
                         <span className="status online" />
                       </figure>
                       <span>Samu Jane</span>
                       <i className><img src="images/resources/user1.jpg" alt /></i>
-                    </a>
-                    <a href="#" title>
+                    </Link>
+                    <Link to="#" title>
                       <figure>
                         <img src="images/resources/user6.jpg" alt />
                         <span className="status online" />
                       </figure>
                       <span>Tina Mark</span>
                       <i className><img src="images/resources/user6.jpg" alt /></i>
-                    </a>
-                    <a href="#" title>
+                    </Link>
+                    <Link to="#" title>
                       <figure>
                         <img src="images/resources/user7.jpg" alt />
                         <span className="status online" />
                       </figure>
                       <span>Ak William</span>
                       <i className><img src="images/resources/user7.jpg" alt /></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="tab-pane fade" id="link3">
                   <div className="friend">
-                    <a href="#" title>
+                    <Link to="#" title>
                       <figure className="group-chat">
                         <img src="images/resources/user5.jpg" alt />
                         <img className="two" src="images/resources/user3.jpg" alt />
@@ -937,8 +860,8 @@ export default function aboutuniversityPage() {
                       </figure>
                       <span>Boys World</span>
                       <i className="icofont-check-circled" />
-                    </a>
-                    <a href="#" title>
+                    </Link>
+                    <Link to="#" title>
                       <figure className="group-chat">
                         <img src="images/resources/user2.jpg" alt />
                         <img className="two" src="images/resources/user3.jpg" alt />
@@ -946,8 +869,8 @@ export default function aboutuniversityPage() {
                       </figure>
                       <span>KK university Fellows</span>
                       <i className="icofont-check-circled" />
-                    </a>
-                    <a href="#" title>
+                    </Link>
+                    <Link to="#" title>
                       <figure className="group-chat">
                         <img src="images/resources/user3.jpg" alt />
                         <img className="two" src="images/resources/user2.jpg" alt />
@@ -955,7 +878,7 @@ export default function aboutuniversityPage() {
                       </figure>
                       <span>Education World</span>
                       <i className="icofont-check-circled" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
